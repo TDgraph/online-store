@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+
+        /*remove browser spaces */
+
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+
+        /* take all the entire width */
+        html,body {
+            width: 100%;
+            background-image: url("Nike.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+
+        }
+        
+    
+
+        /* wrap the image in a container */
+        .container {
+            /* width: 100% */
+            margin: 0px auto;
+
+        }
+
+
+        li {
+            margin-top: 50px;
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            margin-top: 50px;
+            color: lightcoral;
+            border-radius: 5px;
+            transition-delay: 0.2s;
+            transition-property: background-color;
+            transition-timing-function: ease-in;
+            transition-duration: 1s;
+
+        }
+
+        li:hover {
+            background-color: burlywood;
+            color: white;
+        }
+
+       
+
+        h1 {    
+            color:rgb(252, 7, 158);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #p_1,#p_2 {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            transition: background-color cubic-bezier(0.55, 0.055, 0.675, 0.19) ease-in
+
+        }
+
+        #p_1:hover {
+            background-color: burlywood;
+            color: purple;
+        }
+
+        #p_2:hover {
+            background-color: burlywood;
+            color: purple;
+        }
+
+        li link2 {
+            background-attachment: fixed;
+
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+<!-- list -->
+<!--list of shoes-->
+
+<div class="container">
+
+    <marquee>
+        <h1>welcome to my online shoe store.</h1>
+    </marquee>
+    
+
+    <ul style="list-style-type: none;
+            border: 1px solid red;
+            display: inline-block;
+            padding-bottom: 550px;
+            background-color: rgb(252, 145, 229);
+            padding-right: 30px;
+            border-right: 10px solid white;
+        
+            
+    ">
+    <h1>List of shoes</h1>
+        <li id="link1">
+            Nike
+        
+        </li>
+
+        <li id="link2">
+            puma 
+        </li>
+
+        <li id="link3">
+            reebook
+        </li>
+
+        <li id="link4">
+
+            adidas
+        </li>
+
+        <li id="link5">
+
+            gucci
+        </li>
+
+
+
+
+    </ul>
+
+    <!-- product display for Nike -->
+<div style="
+background-color: white;
+display: inline-block;
+text-align: center;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 20px;
+border: 5px solid hotpink;
+position: absolute;
+top: 140px;
+left: 100px;
+display: none;">
+
+    
+    <img src="Nike.jpg" width="60px" height="60px">
+    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    padding-bottom: 5px;">
+        Nike product
+    </h3>
+    <p>
+        Buy Nike now
+    </p>
+    <p>
+        save for later
+    </p>
+
+</div>
+</div>
+
+<!-- display for puma -->
+<div id="puma"  style="background-color: white;
+display: inline-block;
+text-align: center;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border: 5px solid rgb(214, 5, 120);
+position: absolute;
+top: 225px;
+left: 100px;
+display: none;">
+
+<img src="puma.jpg" width="60px" height="60px">
+    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    padding-bottom: 5px;">
+        puma product
+    </h3>
+    <p>
+        Buy puma now
+    </p>
+    <p>
+        save for later
+    </p>
+</div>
+
+<!-- display for reebok -->
+<div id="reebok"  style="background-color: white;
+display: inline-block;
+text-align: center;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border: 5px solid rgb(175, 3, 89);
+position: absolute;
+top: 310px;
+left: 100px;
+display: none;">
+
+<img src="reebok.jpg" width="60px" height="60px">
+    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    padding-bottom: 5px;">
+        reebok product
+    </h3>
+    <p>
+        Buy reebok now
+    </p>
+    <p>
+        save for later
+    </p>
+</div>
+
+<!-- display for adidas -->
+<div id="adidas"  style="background-color: white;
+display: inline-block;
+text-align: center;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border: 5px solid rgb(56, 2, 29);
+position: absolute;
+top: 393px;
+left: 100px;
+display: none;">
+
+<img src="adidas.jpg" width="60px" height="60px">
+    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    padding-bottom: 5px;">
+        Adidas product
+    </h3>
+    <p>
+        Buy Adidas now
+    </p>
+    <p>
+        save for later
+    </p>
+</div>
+
+<!-- display for gucci -->
+<div id="gucci"  style="background-color: white;
+display: inline-block;
+text-align: center;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border: 5px solid rgb(252, 3, 127);
+position: absolute;
+top: 480px;
+left: 100px;
+display: none;">
+
+<img src="gucci.jpg" width="60px" height="60px">
+    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 5px;
+    padding-bottom: 5px;">
+        Gucci product
+    </h3>
+    <p>
+        Buy Gucci now
+    </p>
+    <p>
+        save for later
+    </p>
+</div>
+
+
+<!-- styling the visibility and invisibility of the drop down menu -->
+<script>
+    document.getElementById("link1").addEventListener("mouseenter", function() {
+        document.getElementsByTagName("div")[1].style.display = "block";})
+
+        document.getElementById("link1").addEventListener("mouseleave", function() {
+        document.getElementsByTagName("div")[1].style.display = "none";})
+
+</script>
+<script>
+    document.getElementById("link2").addEventListener("mouseenter", function() {
+        document.getElementsByTagName("div")[2].style.display = "block";})
+
+        document.getElementById("link2").addEventListener("mouseleave", function() {
+        document.getElementsByTagName("div")[2].style.display = "none";})
+
+</script>
+<script>
+    document.getElementById("link3").addEventListener("mouseenter", function() {
+        document.getElementsByTagName("div")[3].style.display = "block";})
+
+        document.getElementById("link3").addEventListener("mouseleave", function() {
+        document.getElementsByTagName("div")[3].style.display = "none";})
+
+</script>
+
+<script>
+    document.getElementById("link4").addEventListener("mouseenter", function() {
+        document.getElementsByTagName("div")[4].style.display = "block";})
+
+        document.getElementById("link4").addEventListener("mouseleave", function() {
+        document.getElementsByTagName("div")[4].style.display = "none";})
+
+</script>
+
+<script>
+    document.getElementById("link5").addEventListener("mouseenter", function() {
+        document.getElementsByTagName("div")[5].style.display = "block";})
+
+        document.getElementById("link5").addEventListener("mouseleave", function() {
+        document.getElementsByTagName("div")[5].style.display = "none";})
+
+</script>
+
+<script>
+    document.getElementById("link1").addEventListener("click", function() {
+        document.getElementsByTagName("body")[0].style.backgroundImage= "url('Nike.jpg')";
+
+
+    })
+
+    document.getElementById("link2").addEventListener("click", function() {
+        document.getElementsByTagName("body")[0].style.backgroundImage= "url('puma.jpg')";
+
+       
+    })
+
+    document.getElementById("link3").addEventListener("click", function() {
+        document.getElementsByTagName("body")[0].style.backgroundImage= "url('reebok.jpg')";
+
+      
+
+    })
+
+    document.getElementById("link4").addEventListener("click", function() {
+        document.getElementsByTagName("body")[0].style.backgroundImage= "url('adidas.jpg')";
+
+        
+    })
+
+    document.getElementById("link5").addEventListener("click", function() {
+        document.getElementsByTagName("body")[0].style.backgroundImage= "url('gucci.jpg')";
+
+       
+
+    })
+</script>
+    
+</body>
+</html>
